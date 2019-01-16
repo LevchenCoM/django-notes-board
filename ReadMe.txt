@@ -1,6 +1,6 @@
 https://github.com/LevchenCoM/django-notes-board
 
-Hello! My name is Mykola and this is a description for test task.
+Hello! My name is Mykola and this is a short description of the project.
 
 I. First of all - How to run project on your local computer. To run project, please, follow this steps:
 
