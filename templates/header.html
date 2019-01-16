@@ -1,0 +1,24 @@
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Notes board</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        {% if request.user.is_authenticated %}
+        <li><a href="/" class="nav-link">All notes</a></li>
+        <li><a href="/logout/" class="nav-link">Logout</a></li>
+        {% else %}
+        <li><a href="/login/" class="nav-link">Login</a></li>
+        <li><a href="/register/" class="nav-link">Register</a></li>
+        {% endif %}
+      </ul>
+      <form action="/notes/add" class="form-inline mt-2 mt-md-0">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Add note</button>
+      </form>
+    </div>
+  </nav>
+
+</header>
