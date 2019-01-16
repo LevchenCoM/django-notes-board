@@ -7,8 +7,11 @@ I. First of all - How to run project on your local computer. To run project, ple
   1. Create new virtualenv for this project;
   2. Install all libraries from requirements.txt;
   3. Run your new virtualenv, go to project folder and write this command in your terminal:
+          For Windows: python manage.py migrate
+          For Linux:   python3 manage.py migrate
+  4. Then write this command for run django server
           For Windows: python manage.py runserver
-          For Linux:   python3 manage.py runserver
+          For Linux:   python3 manage.py runserver       
   4. Congratulations! Now your server is run! Go to "http://127.0.0.1:8000/".
 
 II. Now let's talk about the possibilities of the application.
